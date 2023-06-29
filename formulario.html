@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/fonts/Montserrat/montserrat.css">
+    <link rel="stylesheet" href="assets/css/form.css"> 
+    <title>Automar</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar__container">            
+            <div class="navbar__container--logo">
+                <img class="navbar__logo" src="assets/img/automar.png" alt="logo de Automar">
+            </div>
+            <div class="navbar__container--options">
+                <a class="navbar__option" href="index.html">Home</a>
+                <a class="navbar__option" href="#">Tienda</a>
+                <a class="navbar__option" href="#">Quienes somos</a>
+            </div>            
+        </nav>
+        <section class="manu">
+            <div class="menu__container">
+                <div class="menu__container--form">
+                    <h2>Formulario de contacto</h2>
+                    <form method="post" action="formulario.php">
+                        <fieldset>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" placeholder="nombre" required>
+
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" name="apellido" placeholder="apellido" required>  
+
+                            <label for="direccion">Direccion:</label>
+                            <input type="text" name="direccion" placeholder="direccion" required>
+                            
+                            <label for="telefono">Telefono:</label>
+                            <input type="tel" name="telefono" placeholder="+56" required>
+
+                            <label for="correo">Correo electronico:</label>
+                            <input type="email" name="correo" placeholder="correo">
+                            
+                            <div class="radio">
+                                <input type="radio" name="genero" value="F" required> FEMENINO
+                                <input type="radio" name="genero" value="M" required> MASCULINO
+                            </div>
+
+                        </fieldset>
+                        <input class="form_button" name="ingresar" type="submit" value="Enviar">
+                    </form>
+                 </div>
+                 <div class="menu__container--background">
+                    <ul>
+                        <li><img src="assets/img/16_9/Firefly_model_1.jpg" alt="1"></li>  
+                        <li><img src="assets/img/16_9/Firefly_model_3.jpg" alt="3"></li>  
+                        <li><img src="assets/img/16_9/Firefly_model_4.jpg" alt="4"></li>  
+                        <li><img src="assets/img/16_9/Firefly_model_7.jpg" alt="7"></li>    
+                    </ul>
+
+                    
+                 </div>
+            </div>      
+        </section>
+        <footer class="footer">
+            <p>&copy; Seven Tech Web - SevenTechnology</p>
+        </footer>    
+    </div>
+
+    
+</body>
+</html>
